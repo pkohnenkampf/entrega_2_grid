@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color:#376b8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-texto-header {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
+aside {
+    grid-area: aside;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formato-titulo-lista {
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #232355;
+}
+
+.alineacion-lista {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap:5px;
+    font-size: 12px;
+}
+
+.formato-cantidad {
+    color: #aab8c5;
+}
+
+.formato-genero {
+    color: #40407d;
+}
+
+main {
+    grid-area: main;
+    background-color: #e7e7e7;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.gallery-item {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.nombre-libro {
+    width: 60%;
+    color: #232355;
+    font-size: 16px;
+}
+.valor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #232355;
+}
+
+button {
+    background-color: #232355;
+    color:#FFFFFF ;
+    width: 100%;
+    height: 40px;
+    align-self: self-end;
+}
+
+.container-imagenes {
+    width: 90%;
+    height: 350px;
+    margin: 0 auto; 
+}
+
+.formato-imagenes {
+    height: 100%;
+    margin: auto; 
+    width:80%;
+    border-radius: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-texto-footer {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 4rem 6fr 2rem;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
